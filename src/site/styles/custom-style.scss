@@ -2,9 +2,9 @@
  * =========================================
  * 1. FONT IMPORTS
  * =========================================
- * Import all necessary fonts from Google Fonts.
+ * Import Crimson Text for the body and Oswald for headings.
 */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Oswald:wght@700&display=swap');
 
 
 /*
@@ -42,8 +42,7 @@ body {
  * =========================================
  * 4. HEADING STYLES
  * =========================================
- * Use Lato for headings and create a clear size hierarchy.
- * We use 'rem' so their size is relative to the body text.
+ * Use Oswald to create tall, narrow, and impactful headings.
 */
 .content.cm-s-obsidian h1,
 .content.cm-s-obsidian h2,
@@ -51,13 +50,16 @@ body {
 .content.cm-s-obsidian h4,
 .content.cm-s-obsidian h5,
 .content.cm-s-obsidian h6 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700; /* Make headings bold */
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700; /* Use the bold weight of Oswald */
+  text-transform: uppercase; /* Makes text ALL CAPS for a strong pamphlet feel */
+  letter-spacing: 0.05em; /* Adds a little space between letters for style */
 }
 
-.content.cm-s-obsidian h1 { font-size: 1.5rem; } /* Largest heading */
-.content.cm-s-obsidian h2 { font-size: 1.3rem; }
-.content.cm-s-obsidian h3 { font-size: 1.15rem; } /* Slightly larger than body text */
+/* Set a clear size hierarchy for the new, bigger headings */
+.content.cm-s-obsidian h1 { font-size: 1.8rem; } /* Largest heading */
+.content.cm-s-obsidian h2 { font-size: 1.5rem; }
+.content.cm-s-obsidian h3 { font-size: 1.25rem; }
 
 
 /*
