@@ -1,12 +1,40 @@
-// Import the Latin Modern Roman font
+
+/*
+ * =========================================
+ * 1. FONT DEFINITIONS
+ * =========================================
+*/
+
+// Font for the main content text
 @font-face {
   font-family: 'Latin Modern Roman';
   src: url('../fonts/lmroman12-regular.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
 }
 
-// Apply the font as the main body font
+// Font for the site-wide default
+@font-face {
+  font-family: 'CMU Typewriter';
+  /* --- THIS LINE IS UPDATED --- */
+  src: url('../fonts/cmunvt.ttf') format('truetype');
+}
+
+
+/*
+ * =========================================
+ * 2. GLOBAL STYLES
+ * =========================================
+*/
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'CMU Typewriter', monospace;
+}
+
+
+/*
+ * =========================================
+ * 3. SPECIFIC STYLES
+ * =========================================
+*/
 .content.cm-s-obsidian {
   font-family: 'Latin Modern Roman', serif;
+  font-size: 12pt;
 }
