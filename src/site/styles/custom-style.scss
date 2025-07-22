@@ -77,16 +77,3 @@ body, h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
-
-/* Set a very dark base for the entire page background */
-body {
-  background-color: #1A1A1A !important; /* A deep, near-black color */
-}
-
-/* Make the main content area a slightly lighter dark grey */
-.content.cm-s-obsidian {
-  background-color: #242424; /* A soft, dark charcoal */
-
-  /* Make the text a brighter off-white for better contrast */
-  color: #E8E8E8;
-}
