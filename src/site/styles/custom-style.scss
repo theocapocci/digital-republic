@@ -92,6 +92,10 @@ body {
   opacity: 1;
 }
 
+.toc *, .backlinks * {
+  opacity: inherit;
+}
+
 /*
  * =========================================
  * 7. TOC INDENTATION GUIDE COLOR
