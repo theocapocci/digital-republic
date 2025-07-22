@@ -48,9 +48,10 @@ body {
 .content.cm-s-obsidian h5,
 .content.cm-s-obsidian h6 {
   font-family: 'Oswald', sans-serif;
-  font-weight: 300; /* Use the light, thin weight */
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  opacity: 0.85; /* Add this line to make headings semi-transparent */
 }
 
 /* Set a clear size hierarchy for the new, bigger headings */
