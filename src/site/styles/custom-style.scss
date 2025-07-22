@@ -5,8 +5,7 @@
  * =========================================
  * Import EB Garamond from Google Fonts.
 */
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
 /*
  * =========================================
@@ -33,7 +32,7 @@ body, h1, h2, h3, h4, h5, h6 {
 
 // Set EB Garamond for the main, readable content area.
 .content.cm-s-obsidian {
-  font-family: 'EB Garamond', serif; // <-- The new font
+  font-family: 'Crimson Text', serif; // <-- The new font
   font-size: 24px;
   line-height: 1.8;
   max-width: 70ch;
