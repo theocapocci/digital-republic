@@ -77,3 +77,29 @@ body, h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
+
+/*
+ * =========================================
+ * 7. HOVER-REVEAL LEFT SIDEBAR
+ * =========================================
+*/
+
+/* --- Left Sidebar --- */
+.filetree-sidebar {
+  /*
+   * By default, move the sidebar 95% of its own width to the left.
+   * This leaves a small 5% sliver on screen to act as a hover target.
+   */
+  transform: translateX(-95%);
+
+  /* Add a smooth transition for the slide animation */
+  transition: transform 0.3s ease-in-out;
+
+  /* Optional: Add a subtle shadow to make it feel like it's on top */
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+/* When the user hovers over the sidebar, slide it back into view */
+.filetree-sidebar:hover {
+  transform: translateX(0);
+}
