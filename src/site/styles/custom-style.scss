@@ -2,9 +2,9 @@
  * =========================================
  * 1. FONT IMPORTS
  * =========================================
- * Import Crimson Text for the body and Oswald for headings.
+ * Import Crimson Text for the body and a LIGHT version of Oswald for headings.
 */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Oswald:wght@300&display=swap');
 
 
 /*
@@ -23,13 +23,10 @@
  * 3. GLOBAL & SPECIFIC STYLES
  * =========================================
 */
-
-// Set the default font for elements outside the main content.
 body {
   font-family: 'CMU Typewriter Text', monospace !important;
 }
 
-// Set Crimson Text for the main, readable content area.
 .content.cm-s-obsidian {
   font-family: 'Crimson Text', serif;
   font-size: 26px;
@@ -42,7 +39,7 @@ body {
  * =========================================
  * 4. HEADING STYLES
  * =========================================
- * Use Oswald to create tall, narrow, and impactful headings.
+ * Use Oswald in a light weight for a tall, thin, and impactful heading.
 */
 .content.cm-s-obsidian h1,
 .content.cm-s-obsidian h2,
@@ -51,15 +48,15 @@ body {
 .content.cm-s-obsidian h5,
 .content.cm-s-obsidian h6 {
   font-family: 'Oswald', sans-serif;
-  font-weight: 700; /* Use the bold weight of Oswald */
-  text-transform: uppercase; /* Makes text ALL CAPS for a strong pamphlet feel */
-  letter-spacing: 0.05em; /* Adds a little space between letters for style */
+  font-weight: 300; /* Use the light, thin weight */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 /* Set a clear size hierarchy for the new, bigger headings */
-.content.cm-s-obsidian h1 { font-size: 1.8rem; } /* Largest heading */
-.content.cm-s-obsidian h2 { font-size: 1.5rem; }
-.content.cm-s-obsidian h3 { font-size: 1.25rem; }
+.content.cm-s-obsidian h1 { font-size: 2.5rem; }
+.content.cm-s-obsidian h2 { font-size: 2.0rem; }
+.content.cm-s-obsidian h3 { font-size: 1.6rem; }
 
 
 /*
@@ -77,8 +74,6 @@ body {
  * 6. SIDEBAR ENHANCEMENTS
  * =========================================
 */
-
-/* --- Left Sidebar --- */
 .filetree-sidebar {
   opacity: 0.8;
   transform: translateX(-95%);
@@ -90,7 +85,6 @@ body {
   transform: translateX(0);
 }
 
-/* --- Right Sidebar --- */
 .toc-container, .backlinks {
   opacity: 0.6;
   transition: opacity 0.2s ease-in-out;
