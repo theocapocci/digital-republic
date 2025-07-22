@@ -60,7 +60,7 @@ body, h1, h2, h3, h4, h5, h6 {
 /* --- Left Sidebar --- */
 /* Make it less transparent for easier navigation. */
 .filetree-sidebar {
-  opacity: 0.9; /* Less transparent (e.g., 70% opaque) */
+  opacity: 0.8; /* Less transparent (e.g., 70% opaque) */
   transition: opacity 0.2s ease-in-out;
 }
 .filetree-sidebar:hover {
