@@ -49,3 +49,20 @@ body, h1, h2, h3, h4, h5, h6 {
 .content.cm-s-obsidian p {
   margin-bottom: 2em; /* Try 1.5em, 1.6em, or higher */
 }
+
+/*
+ * =========================================
+ * 5. LAYOUT & READABILITY ENHANCEMENTS
+ * =========================================
+*/
+
+/* De-emphasize the sidebars by making them semi-transparent */
+.filetree-sidebar, .toc-container, .backlinks {
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+/* Bring sidebars back to full focus on hover */
+.filetree-sidebar:hover, .toc-container:hover, .backlinks:hover {
+  opacity: 1;
+}
