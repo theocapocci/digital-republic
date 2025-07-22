@@ -3,3 +3,5 @@
 ---
 
 This is the homepage
+
+[[What is a digital garden\|What is a digital garden]]?
