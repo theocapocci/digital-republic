@@ -51,7 +51,7 @@ body {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  opacity: 0.85; /* Add this line to make headings semi-transparent */
+  opacity: 0.6; /* Add this line to make headings semi-transparent */
 }
 
 /* Set a clear size hierarchy for the new, bigger headings */
@@ -77,8 +77,6 @@ body {
 */
 .filetree-sidebar {
   opacity: 0.8;
-  transform: translateX(-95%);
-  transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
   box-shadow: 2px 0 10px rgba(0,0,0,0.1);
 }
 .filetree-sidebar:hover {
