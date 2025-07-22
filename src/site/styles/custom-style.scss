@@ -51,13 +51,12 @@ body {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  opacity: 0.6; /* Add this line to make headings semi-transparent */
 }
 
 /* Set a clear size hierarchy for the new, bigger headings */
-.content.cm-s-obsidian h1 { font-size: 2.5rem; }
-.content.cm-s-obsidian h2 { font-size: 2.0rem; }
-.content.cm-s-obsidian h3 { font-size: 1.6rem; }
+.content.cm-s-obsidian h1 { font-size: 2.8rem; opacity: 0.8;}
+.content.cm-s-obsidian h2 { font-size: 2.2rem; opacity: 0.6;}
+.content.cm-s-obsidian h3 { font-size: 1.8rem; opacity: 0.6;}
 
 
 /*
