@@ -84,10 +84,10 @@ body {
   transform: translateX(0);
 }
 
-.toc-container, .backlinks {
+.toc-container, .backlinks .toc-title {
   opacity: 0.6;
   transition: opacity 0.2s ease-in-out;
 }
-.toc-container:hover, .backlinks:hover {
+.toc-container:hover, .backlinks:hover .toc-title:hover {
   opacity: 1;
 }
