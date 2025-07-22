@@ -91,3 +91,16 @@ body {
 .toc:hover, .backlinks:hover {
   opacity: 1;
 }
+
+/*
+ * =========================================
+ * 7. TOC INDENTATION GUIDE COLOR
+ * =========================================
+ * Match the ToC guide color to the filetree guide color
+ * for a consistent design.
+*/
+.toc-container .toc ul,
+.toc-container .toc ol {
+  /* This is the color you found from the other guides */
+  border-left-color: rgb(136, 158, 170);
+}
