@@ -77,16 +77,17 @@ body {
 .filetree-sidebar {
   opacity: 0.8;
   box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+  transition: opacity 0.2s ease-in-out; /* Optional: makes the fade on hover smooth */
+
 }
 .filetree-sidebar:hover {
   opacity: 1;
-  transform: translateX(0);
 }
 
-.toc-container, .backlinks .toc-title {
+.toc-container, .backlinks, .toc-title {
   opacity: 0.6;
   transition: opacity 0.2s ease-in-out;
-}
-.toc-container:hover, .backlinks:hover .toc-title:hover {
+} 
+.toc-container:hover, .backlinks:hover, .toc-title:hover {
   opacity: 1;
 }
