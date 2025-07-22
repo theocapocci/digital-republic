@@ -34,8 +34,7 @@ body, h1, h2, h3, h4, h5, h6 {
 .content.cm-s-obsidian {
   font-family: 'Crimson Text', serif; // <-- The new font
   font-size: 26px;
-  max-width: 300px;
   line-height: 1.9;
-  max-width: 70ch;
+  max-width: 20ch;
   // ... your other styles
 }
