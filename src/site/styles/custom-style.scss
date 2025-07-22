@@ -26,8 +26,17 @@
 */
 
 // Set your default font for elements outside the main content.
-body, h1, h2, h3, h4, h5, h6 {
+body {
   font-family: 'CMU Typewriter Text', monospace !important;
+}
+
+.content.cm-s-obsidian h1,
+.content.cm-s-obsidian h2,
+.content.cm-s-obsidian h3,
+.content.cm-s-obsidian h4,
+.content.cm-s-obsidian h5,
+.content.cm-s-obsidian h6 {
+  font-family: 'Crimson Text', serif;
 }
 
 // Set EB Garamond for the main, readable content area.
