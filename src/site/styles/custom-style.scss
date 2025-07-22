@@ -1,17 +1,16 @@
-
 /*
  * =========================================
- * 1. FONT IMPORT
+ * 1. FONT IMPORTS
  * =========================================
- * Import EB Garamond from Google Fonts.
+ * Import all necessary fonts from Google Fonts.
 */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
 
 /*
  * =========================================
  * 2. FONT DEFINITIONS
  * =========================================
- * (Your other @font-face rules can remain here).
 */
 @font-face {
   font-family: 'CMU Typewriter Text';
@@ -25,90 +24,75 @@
  * =========================================
 */
 
-// Set your default font for elements outside the main content.
+// Set the default font for elements outside the main content.
 body {
   font-family: 'CMU Typewriter Text', monospace !important;
 }
 
+// Set Crimson Text for the main, readable content area.
+.content.cm-s-obsidian {
+  font-family: 'Crimson Text', serif;
+  font-size: 26px;
+  line-height: 1.9;
+  max-width: 60ch;
+}
+
+
+/*
+ * =========================================
+ * 4. HEADING STYLES
+ * =========================================
+ * Use Lato for headings and create a clear size hierarchy.
+ * We use 'rem' so their size is relative to the body text.
+*/
 .content.cm-s-obsidian h1,
 .content.cm-s-obsidian h2,
 .content.cm-s-obsidian h3,
 .content.cm-s-obsidian h4,
 .content.cm-s-obsidian h5,
 .content.cm-s-obsidian h6 {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700; /* Make headings bold */
 }
 
-// Set EB Garamond for the main, readable content area.
-.content.cm-s-obsidian {
-  font-family: 'Crimson Text', serif; // <-- The new font
-  font-size: 26px;
-  line-height: 1.9;
-  max-width: 60ch;
-  // ... your other styles
-}
+.content.cm-s-obsidian h1 { font-size: 1.5rem; } /* Largest heading */
+.content.cm-s-obsidian h2 { font-size: 1.3rem; }
+.content.cm-s-obsidian h3 { font-size: 1.15rem; } /* Slightly larger than body text */
+
 
 /*
  * =========================================
- * 4. PARAGRAPH SPACING
+ * 5. PARAGRAPH SPACING
  * =========================================
- * Increase the bottom margin of paragraphs to create more
- * space between them.
 */
 .content.cm-s-obsidian p {
-  margin-bottom: 2em; /* Try 1.5em, 1.6em, or higher */
+  margin-bottom: 2em;
 }
+
 
 /*
  * =========================================
- * 5. LAYOUT & READABILITY ENHANCEMENTS
+ * 6. SIDEBAR ENHANCEMENTS
  * =========================================
 */
 
-
 /* --- Left Sidebar --- */
-/* Make it less transparent for easier navigation. */
 .filetree-sidebar {
-  opacity: 0.8; /* Less transparent (e.g., 70% opaque) */
-  transition: opacity 0.2s ease-in-out;
+  opacity: 0.8;
+  transform: translateX(-95%);
+  transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
 }
 .filetree-sidebar:hover {
   opacity: 1;
+  transform: translateX(0);
 }
 
 /* --- Right Sidebar --- */
-/* Make it more transparent to reduce distraction. */
 .toc-container, .backlinks {
-  opacity: 0.6; /* More transparent (e.g., 40% opaque) */
+  opacity: 0.6;
   transition: opacity 0.2s ease-in-out;
 }
 .toc-container:hover, .backlinks:hover {
   opacity: 1;
-}
-
-
-/*
- * =========================================
- * 7. HOVER-REVEAL LEFT SIDEBAR
- * =========================================
-*/
-
-/* --- Left Sidebar --- */
-.filetree-sidebar {
-  /*
-   * By default, move the sidebar 95% of its own width to the left.
-   * This leaves a small 5% sliver on screen to act as a hover target.
-   */
-  transform: translateX(-95%);
-
-  /* Add a smooth transition for the slide animation */
-  transition: transform 0.3s ease-in-out;
-
-  /* Optional: Add a subtle shadow to make it feel like it's on top */
-  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
-}
-
-/* When the user hovers over the sidebar, slide it back into view */
-.filetree-sidebar:hover {
-  transform: translateX(0);
 }
