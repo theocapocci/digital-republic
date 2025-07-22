@@ -4,17 +4,18 @@
  * =========================================
  * Import Crimson Text for the body and a LIGHT version of Oswald for headings.
 */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=IM+Fell+English+SC&family=Oswald:wght@300&display=swap');
 
 
 /*
  * =========================================
- * 2. FONT DEFINITIONS
+ * 2. GLOBAL & SPECIFIC STYLES
  * =========================================
 */
-@font-face {
-  font-family: 'CMU Typewriter Text';
-  src: url('../fonts/cmunvt.ttf') format('truetype');
+/* Set the new 18th-century font as the global default */
+body {
+  font-family: 'IM Fell English SC', serif !important;
+  text-transform: none !important; /* This font is already small caps */
 }
 
 
