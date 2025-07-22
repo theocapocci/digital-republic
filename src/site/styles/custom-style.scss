@@ -1,13 +1,12 @@
+// Import the Latin Modern Roman font
+@font-face {
+  font-family: 'Latin Modern Roman';
+  src: url('../fonts/lmroman10-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Apply the font as the main body font
 body {
-    /***
-      ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
-      IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
-   ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+  font-family: 'Latin Modern Roman', serif;
 }
