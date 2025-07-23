@@ -4,7 +4,7 @@
  * =========================================
  * Import all necessary fonts from Google Fonts.
 */
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&family=IM+Fell+English+SC&family=Sorts+Mill+Goudy:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=IM+Fell+English&family=IM+Fell+English+SC&family=Sorts+Mill+Goudy:ital,wght@0,400;0,700;1,400&display=swap');
 
 
 /*
@@ -31,8 +31,7 @@ body {
  * =========================================
  * 3. HEADING STYLES
  * =========================================
- * Use IM Fell English SC for headings to create a cohesive look.
- * Note: This font only has one weight (Regular 400).
+ * Use Cormorant Garamond in a light weight for a tall, thin, and elegant heading.
 */
 .content.cm-s-obsidian h1,
 .content.cm-s-obsidian h2,
@@ -40,9 +39,10 @@ body {
 .content.cm-s-obsidian h4,
 .content.cm-s-obsidian h5,
 .content.cm-s-obsidian h6 {
-  font-family: 'IM Fell English', serif;
-  /* font-weight is removed as only one weight is available */
-  letter-spacing: 0.05em; /* Keep the letter spacing for style */
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300; /* Use the light, thin weight */
+  text-transform: none; /* This font looks best in its natural case */
+  letter-spacing: 0.05em;
 }
 
 /* Set a clear size hierarchy for the new, bigger headings */
