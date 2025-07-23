@@ -2,9 +2,9 @@
  * =========================================
  * 1. FONT IMPORTS
  * =========================================
- * Import Crimson Text for the body and a LIGHT version of Oswald for headings.
+ * Import all necessary fonts from Google Fonts.
 */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=IM+Fell+English+SC&family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&family=IM+Fell+English&family=IM+Fell+English+SC&family=Oswald:wght@300&display=swap');
 
 
 /*
@@ -12,13 +12,13 @@
  * 2. GLOBAL & SPECIFIC STYLES
  * =========================================
 */
-/* Set the new 18th-century font as the global default */
+
+/* Set the Small Caps version as the global default for the site title and UI */
 body {
   font-family: 'IM Fell English SC', serif !important;
-  text-transform: none !important; /* This font is already small caps */
 }
 
-
+/* Set Crimson Text for the main, readable content area */
 .content.cm-s-obsidian {
   font-family: 'Crimson Text', serif;
   font-size: 26px;
@@ -29,9 +29,8 @@ body {
 
 /*
  * =========================================
- * 4. HEADING STYLES
+ * 3. HEADING STYLES
  * =========================================
- * Use Oswald in a light weight for a tall, thin, and impactful heading.
 */
 .content.cm-s-obsidian h1,
 .content.cm-s-obsidian h2,
@@ -40,20 +39,20 @@ body {
 .content.cm-s-obsidian h5,
 .content.cm-s-obsidian h6 {
   font-family: 'Oswald', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 /* Set a clear size hierarchy for the new, bigger headings */
-.content.cm-s-obsidian h1 { font-size: 2.8rem; opacity: 0.65;}
-.content.cm-s-obsidian h2 { font-size: 2.2rem; opacity: 0.5;}
-.content.cm-s-obsidian h3 { font-size: 1.8rem; opacity: 0.5;}
+.content.cm-s-obsidian h1 { font-size: 2.8rem; opacity: 0.65; }
+.content.cm-s-obsidian h2 { font-size: 2.2rem; opacity: 0.5; }
+.content.cm-s-obsidian h3 { font-size: 1.8rem; opacity: 0.5; }
 
 
 /*
  * =========================================
- * 5. PARAGRAPH SPACING
+ * 4. PARAGRAPH SPACING
  * =========================================
 */
 .content.cm-s-obsidian p {
@@ -63,37 +62,42 @@ body {
 
 /*
  * =========================================
- * 6. SIDEBAR ENHANCEMENTS
+ * 5. SIDEBAR ENHANCEMENTS
  * =========================================
 */
+
+/* --- Left Sidebar --- */
 .filetree-sidebar {
   opacity: 0.8;
   box-shadow: 2px 0 10px rgba(0,0,0,0.1);
-  transition: opacity 0.2s ease-in-out; /* Optional: makes the fade on hover smooth */
-
+  transition: opacity 0.2s ease-in-out;
 }
 .filetree-sidebar:hover {
   opacity: 1;
 }
 
+/* This is the new rule for the folder and file text */
+.nav-folder-title,
+.nav-file-title {
+  font-family: 'IM Fell English', serif; /* Use the regular version */
+}
+
+/* --- Right Sidebar --- */
 .toc, .backlinks {
   opacity: 0.6;
   transition: opacity 0.2s ease-in-out;
-} 
+}
 .toc:hover, .backlinks:hover {
   opacity: 1;
 }
 
+/* Force all children (like the title) to inherit sidebar opacity */
+.toc *, .backlinks * {
+  opacity: inherit;
+}
 
-/*
- * =========================================
- * 7. TOC INDENTATION GUIDE COLOR
- * =========================================
- * Match the ToC guide color to the filetree guide color
- * for a consistent design.
-*/
+/* Fix for the TOC indentation guide color */
 .toc-container .toc ul,
 .toc-container .toc ol {
-  /* This is the color you found from the other guides */
   border-left-color: rgb(136, 158, 170);
 }
