@@ -116,3 +116,14 @@ body {
 .toc-container .toc ol {
   border-left-color: rgb(136, 158, 170);
 }
+
+/*
+ * =========================================
+ * 9. UNSTICKY SIDEBARS
+ * =========================================
+ * Change the sidebars from "sticky" to "absolute" positioning
+ * so they scroll up with the page content.
+*/
+.sidebar {
+  position: absolute;
+}
